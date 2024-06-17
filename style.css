@@ -1,0 +1,511 @@
+:root {
+    --bg: #00ebb8;
+    --color: rgb(24, 24, 24);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 4%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b4b4b4;
+    position: fixed;
+    z-index: 999;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(141, 141, 141);
+    text-shadow: 10px var(--color);
+}
+
+.nav a::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--color);
+    padding-bottom: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s linear;
+
+}
+
+.nav a:hover::after {
+    transform: scaleX(1)
+}
+
+.hambuger-menu svg {
+    margin: 0 .5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hambuger-menu .menu {
+    display: none;
+}
+
+
+.hiro {
+    background: url(./img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 1.2rem 4% 10rem;
+}
+
+.wraper .status {
+    max-width: 600px;
+}
+
+.wraper .status h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.wraper .status p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.slide-image {
+    position: relative;
+}
+
+.slide-image .image {
+    width: 40rem;
+    height: 25rem;
+    position: relative;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.slide-image .image .image-box {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    width: 100%;
+    height: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.slide-image .image .image-box #box-image-1 {
+    background: url(./img/1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-image .image .image-box #box-image-2 {
+    background: url(./img/2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-image .image .image-box #box-image-3 {
+    background: url(./img/3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-200%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.hambuger-menu .search-from {
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    width: 90vw;
+    height: 5rem;
+    display: flex;
+    transition: .2s linear;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.hambuger-menu .search-from input {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 2rem;
+    outline: none;
+    background: #424242;
+    padding: 0 15px 0;
+}
+
+.hambuger-menu .search-from label {
+    color: black;
+    display: flex;
+    background-color: #424242;
+    align-items: center;
+    padding: 8px 1rem;
+    cursor: pointer;
+    border: 2px solid floralwhite;
+    justify-content: center;
+
+}
+
+.nav.active {
+    right: 0;
+}
+
+.hambuger-menu .search-from.active {
+    transform: scaleY(1);
+}
+
+.hiro2,
+.hiro3,
+.hiro4 {
+    padding: 7rem 4% 1.4rem;
+    position: relative;
+}
+
+.hiro2 h1,
+.hiro3 h1,
+.hiro4 h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+
+
+}
+
+.hiro2 h1,
+.hiro3 h1,
+.hiro4 span {
+    color: #424242;
+}
+
+.hiro2 .wraper {
+    display: flex;
+    height: auto;
+    position: relative;
+    justify-content:center;
+}
+
+.hiro2 .wraper .box {
+    padding: 1rem;
+}
+
+.hiro2 .wraper .box p {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 2rem;
+}
+
+.hiro2 .wraper .img img {
+    border-radius: 50%;
+    height: 40vh;
+
+}
+.hiro3 .wraper {
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.hiro3 .wraper .box-makanan {
+    margin: 0 1rem 1.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 2px rgb(194, 187, 187);
+    transition: .2s linear;
+    border-radius: 3px;
+
+}
+
+.hiro3 .wraper .box-makanan:hover {
+    background-color: #e0e0e0;
+
+}
+
+.hiro3 .wraper .box-makanan .img img {
+    height: 25rem;
+}
+
+.hiro3 .wraper .box-makanan .img {
+    margin-bottom: 2rem;
+}
+
+.hiro3 .wraper .box-makanan .harga {
+    font-size: 2rem;
+    margin: 1rem auto .5rem;
+    text-align: center;
+}
+
+.hiro3 .wraper .box-makanan .harga span {
+    text-decoration: line-through;
+    font-size: 12px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #424242;
+}
+
+.row .map {
+    flex: 1 1 40rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row form {
+    flex: 1 1 40rem;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.row form .input-group {
+    border: 1px solid #424242;
+    display: flex;
+    margin-top: 2rem;
+    background-color: #b4b4b4;
+    margin-left: 2rem;
+    align-items: center;
+
+}
+
+.row form .input-group input {
+    width: 100%;
+    background: none;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+.row form .text-area {
+    margin-top: 2rem;
+}
+
+.row form .text-area textarea{
+    font-size: 1.6rem;
+}
+
+.row form a {
+    padding: 1rem 2rem;
+    color: #000;
+    background-color: #424242;
+    border: 1px solid #b4b4b4;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer .main {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+
+.footer .main h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.footer .main .box-info {
+    padding: 1rem;
+}
+
+.footer .main .box-info p {
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+.footer .main .box-info a {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    color: #424242;
+
+}
+
+.footer .main1 {
+    background-color: #424242;
+}
+
+.footer .main1 p {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width:1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 62%;
+
+    }
+
+    .hiro {
+        min-height: auto;
+    }
+
+    .hiro .wraper {
+        flex-wrap: wrap;
+    }
+
+    .hiro3 {
+        padding: 0 0 15rem;
+    }
+
+    .hambuger-menu .menu {
+        display: inline-flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: -100vh;
+        width: 30rem;
+        background-color: #242424f8;
+        height: 100vh;
+    }
+
+    .nav a {
+        display: block;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .nav a:hover::after {
+        transform: scaleX(.3);
+    }
+
+    .wraper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wraper .status {
+        margin-top: 5rem;
+    }
+
+    .slide-image .image {
+        height: 20rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .footer .main {
+        flex-wrap: wrap;
+    }
+
+    .footer .main .box-info a {
+        padding: 0 1rem;
+    }
+    .hiro4 .wraper .image {
+        flex: 1 1 30rem;
+        width: 100%;
+      
+        object-fit: cover;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row .map {
+        height: 30rem;
+    }
+
+}
+
+
+@media (max-width:450px) {
+    html {
+        font-size: 55%
+    }
+}
