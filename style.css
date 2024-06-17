@@ -31,7 +31,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #b4b4b4;
     position: fixed;
     z-index: 999;
 }
@@ -77,7 +76,7 @@ body {
 
 
 .hiro {
-    background: url(./img/bg1.jpg);
+    background: url(./img/bg.jfif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,21 +126,21 @@ body {
 }
 
 .slide-image .image .image-box #box-image-1 {
-    background: url(./img/1.jpeg);
+    background: url(/img/1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slide-image .image .image-box #box-image-2 {
-    background: url(./img/2.jpeg);
+    background: url(./img/2.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slide-image .image .image-box #box-image-3 {
-    background: url(./img/3.jpeg);
+    background: url(./img/3.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
