@@ -293,11 +293,9 @@ body {
 
 .hiro3 .wraper .box-makanan {
     margin: 0 1rem 1.5rem;
-    padding: 1rem;
     box-shadow: 2px 2px 2px 2px rgb(194, 187, 187);
     transition: .2s linear;
     border-radius: 3px;
-
 }
 
 .hiro3 .wraper .box-makanan:hover {
@@ -511,11 +509,10 @@ body {
         font-size: 55%
     }
 
-
     .hiro2,
     .hiro3,
     .hiro4 {
-        padding: 4rem 0 1.4rem;
+        padding: 4rem 0px 1.4rem;
         position: relative;
     }
 }
